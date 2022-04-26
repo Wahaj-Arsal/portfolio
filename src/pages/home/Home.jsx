@@ -4,6 +4,8 @@ import "./Home.scss";
 
 import profiePicture from "../../assets/images/wahaj.jpg";
 import openFashion from "../../assets/images/openfashion.jpg";
+import playflix from "../../assets/images/playflix.jpg";
+import chords from "../../assets/images/chords.jpg";
 import html from "../../assets/images/html5.svg";
 import javascript from "../../assets/images/js.svg";
 import scss from "../../assets/images/sass.svg";
@@ -49,7 +51,7 @@ function Home() {
               <img className="card__picture" src={openFashion} />
             </div>
             <div className="card__information">
-              <h3 className="card__title">Open Fashion</h3>
+              <h3 className="card__title">E-commerce Website - Open Fashion</h3>
               <p className="card__text">Information about the project</p>
               <div className="stack">
                 <p className="stack__react">React</p>
@@ -64,10 +66,10 @@ function Home() {
           </div>
           <div className="card">
             <div className="card__image">
-              <img className="card__picture" src={openFashion} />
+              <img className="card__picture" src={playflix} />
             </div>
             <div className="card__information">
-              <h3 className="card__title">NewFlix</h3>
+              <h3 className="card__title">Streaming Website - PlayFlix</h3>
               <p className="card__text">Information about the project</p>
               <div className="stack">
                 <p className="stack__react">React</p>
@@ -82,10 +84,10 @@ function Home() {
           </div>
           <div className="card">
             <div className="card__image">
-              <img className="card__picture" src={openFashion} />
+              <img className="card__picture" src={chords} />
             </div>
             <div className="card__information">
-              <h3 className="card__title">BandSite</h3>
+              <h3 className="card__title">Music Website - Puddle of Chords</h3>
               <p className="card__text">Information about the project</p>
               <div className="stack">
                 <p className="stack__react">React</p>
