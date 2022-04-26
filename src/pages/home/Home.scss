@@ -1,0 +1,219 @@
+/** @format */
+
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/resets" as *;
+@use "../../styles/breakpoints" as *;
+
+.hero-container {
+  background-color: $background-dark;
+}
+
+.hero {
+  @include flex(column, center, flex-start);
+  padding: 0 1rem;
+  height: 100vh;
+  max-width: 1020px;
+  margin: 0 auto;
+  @include tablet {
+    padding: 0 3.5rem;
+  }
+  @include desktop {
+    padding: 2rem 3.5rem 6rem 3.5rem;
+  }
+  &__title {
+    @include m-t-d-h2;
+    padding: 4rem 0 1rem 0;
+    color: $text-light;
+  }
+  &__name {
+    @include m-t-d-h5;
+    padding: 1rem 0 1rem 0;
+    color: $text-light-accent;
+  }
+}
+
+.about-container {
+  background-color: $background-light;
+}
+
+.about {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  @include tablet {
+    padding: 0 3.5rem 4rem 3.5rem;
+  }
+  @include desktop {
+    padding: 2rem 3.5rem 6rem 3.5rem;
+  }
+  &__name {
+    @include m-t-d-h5;
+    color: $text-light-accent;
+  }
+  &__title {
+    @include m-t-d-h2;
+    padding: 4rem 0 1rem 0;
+    color: $text-dark;
+  }
+  &__information {
+    @include flex(column, center, center);
+    padding: 2rem 0 0 0;
+    // height: 100%;
+    @include desktop {
+      @include flex(row, flex-start, center);
+    }
+  }
+  &__image {
+    width: 100%;
+    border-radius: 50%;
+    padding: 1rem 0;
+    @include tablet {
+      width: 60%;
+    }
+    @include desktop {
+      width: 45%;
+    }
+  }
+  &__text {
+    @include m-t-d-text-big;
+    color: $text-dark;
+    padding: 1rem 1rem 4rem 1rem;
+    @include tablet {
+      padding: 2rem 0 0 0;
+    }
+    @include desktop {
+      padding: 0 0 0 2rem;
+    }
+  }
+}
+
+.portfolio-container {
+  background-color: $background-dark;
+}
+
+.portfolio {
+  @include flex(column, center, flex-start);
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 1rem 4rem 1rem;
+  @include tablet {
+    padding: 0 3.5rem 4rem 3.5rem;
+  }
+  @include desktop {
+    padding: 2rem 3.5rem 6rem 3.5rem;
+  }
+  &__title {
+    @include m-t-d-h2;
+    padding: 4rem 0 1rem 0;
+    // padding: 1rem 0 1rem 0;
+    color: $text-light;
+    text-align: center;
+  }
+}
+.card {
+  @include flex(column, center, flex-start);
+  background-color: $background-dark;
+  width: 100%;
+  // height: 100vh;
+  padding: 2rem 0;
+  &__image {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  &__picture {
+    width: 50%;
+    height: 40%;
+  }
+  &__information {
+    color: $text-light;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  &__title {
+    @include m-t-d-h4;
+  }
+  &__text {
+    @include m-t-d-text;
+  }
+}
+
+.stack {
+  @include flex(row, flex-start, center);
+  padding: 1rem 0;
+  width: 100%;
+  //   border: 1px solid black;
+  &__react {
+  }
+  &__node {
+  }
+  &__express {
+  }
+}
+.buttons {
+  @include flex(row, space-evenly, center);
+  padding: 1rem 0;
+  &__live {
+    @include m-t-d-label;
+    background-color: $background-button;
+    color: $text-light;
+    padding: 0.75rem 2rem;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+  }
+  &__git {
+    @include m-t-d-label;
+    background-color: $background-button;
+    color: $text-light;
+    padding: 0.75rem 2rem;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+  }
+}
+
+.skills-container {
+  background-color: $background-light;
+}
+
+.skills {
+  margin: 0 auto;
+  max-width: 1020px;
+  padding: 0 1rem 4rem 1rem;
+  @include tablet {
+    padding: 0 3.5rem 4rem 3.5rem;
+  }
+  @include desktop {
+    padding: 2rem 3.5rem 6rem 3.5rem;
+  }
+  &__title {
+    @include m-t-d-h2;
+    padding: 4rem 0 1rem 0;
+    color: $text-dark;
+  }
+  &__images {
+    @include flex(row, space-around, center);
+    flex-wrap: wrap;
+    padding: 1rem 0 0 0;
+    // height: 20rem;
+  }
+  &__icon {
+    width: 150px;
+    height: 100px;
+    margin: 1rem 0;
+    // padding: 1rem 0.5rem;
+    // padding: 1rem 0;
+    &-margin {
+      margin: 0;
+    }
+    @include tablet {
+      margin: 1rem 0.75rem;
+    }
+  }
+  &__micro {
+    width: 150px;
+    height: 100px;
+  }
+}

@@ -1,0 +1,58 @@
+/** @format */
+
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/resets" as *;
+@use "../../styles/breakpoints" as *;
+
+.contact-container {
+  background-color: $background-dark;
+}
+
+.contact {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 1rem 4rem 1rem;
+  @include tablet {
+    padding: 0 3.5rem 4rem 3.5rem;
+  }
+  &__title {
+    @include m-t-d-h2;
+    padding: 4rem 0 1rem 0;
+    color: $text-light;
+  }
+  &__description {
+    @include m-t-d-text;
+    color: $text-light;
+    padding: 1rem 0;
+  }
+  &__icons {
+    @include flex(row, space-evenly, center);
+    // padding: 1.5rem 0;
+    margin: 1.5rem 0;
+    @include tablet {
+      // padding: 1.5rem 2rem;
+      margin: 1.5rem 8rem;
+    }
+    @include desktop {
+      margin: 1.5rem 12rem;
+    }
+  }
+  &__icons-container {
+    @include flex(row, center, center);
+    width: 100%;
+    background-color: $background-light;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  &__email {
+    width: 25px;
+  }
+  &__linkedin {
+    width: 25px;
+  }
+  &__github {
+    width: 25px;
+  }
+}
