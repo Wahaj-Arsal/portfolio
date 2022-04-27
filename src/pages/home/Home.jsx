@@ -48,19 +48,42 @@ function Home() {
           <h2 className="portfolio__title">Portfolio</h2>
           <div className="card">
             <div className="card__image">
-              <img className="card__picture" src={openFashion} />
+              <img className="card__picture-openfashion" src={openFashion} />
             </div>
             <div className="card__information">
               <h3 className="card__title">E-commerce Website - Open Fashion</h3>
-              <p className="card__text">Information about the project</p>
+              <p className="card__text">
+                Open Fashion is the final project for my Full Stack Web
+                Development Bootcamp.
+              </p>
+              <p className="card__text">
+                Open Fashion is a functional e-commerce mobile website which
+                allows users to browse, filter, review and purchase clothes. The
+                website also has mapbox integration to allow users to locate and
+                get directions to their nearest store.
+              </p>
               <div className="stack">
-                <p className="stack__react">React</p>
-                <p className="stack__node">Node.js</p>
-                <p className="stack__express">Express</p>
+                <p className="stack__item">React</p>
+                <p className="stack__item">Node.js</p>
+                <p className="stack__item">Stripe</p>
+                <p className="stack__item">Twilio</p>
+                <p className="stack__item">MapBox</p>
               </div>
               <div className="buttons">
-                <button className="buttons__live">Live Site</button>
-                <button className="buttons__git">Git Repo</button>
+                <a
+                  href="https://openfashion.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="buttons__live">Live Site</button>
+                </a>
+                <a
+                  href="https://github.com/Wahaj-Arsal/OpenFashion"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="buttons__git">Git Repo</button>
+                </a>
               </div>
             </div>
           </div>
@@ -70,15 +93,38 @@ function Home() {
             </div>
             <div className="card__information">
               <h3 className="card__title">Streaming Website - PlayFlix</h3>
-              <p className="card__text">Information about the project</p>
+              <p className="card__text">
+                PlayFlix is a full stack web application with responsive design.
+              </p>
+              <p className="card__text">
+                PlayFlix is a demo streaming website which allows users to
+                upload videos, create and delete comments.
+              </p>
+              <p className="card__text">
+                React Router Dom v5.3 with routes to each page.
+              </p>
               <div className="stack">
-                <p className="stack__react">React</p>
-                <p className="stack__node">Node.js</p>
-                <p className="stack__express">Express</p>
+                <p className="stack__item">HTML</p>
+                <p className="stack__item">SASS</p>
+                <p className="stack__item">React</p>
+                <p className="stack__item">Node.js</p>
+                <p className="stack__item">Express</p>
               </div>
               <div className="buttons">
-                <button className="buttons__live">Live Site</button>
-                <button className="buttons__git">Git Repo</button>
+                <a
+                  href="https://playflix-6b2a0.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="buttons__live">Live Site</button>
+                </a>
+                <a
+                  href="https://github.com/Wahaj-Arsal/Play_Flix"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="buttons__git">Git Repo</button>
+                </a>
               </div>
             </div>
           </div>
@@ -87,16 +133,35 @@ function Home() {
               <img className="card__picture" src={chords} />
             </div>
             <div className="card__information">
-              <h3 className="card__title">Music Website - Puddle of Chords</h3>
-              <p className="card__text">Information about the project</p>
+              <h3 className="card__title">Music Site - Puddle of Chords</h3>
+              <p className="card__text">
+                A response react application with mobile first design. <br />
+                BEM naming convention. <br />
+                Animations to bring the website to life. <br />
+                DOM Manipulation to
+              </p>
               <div className="stack">
-                <p className="stack__react">React</p>
-                <p className="stack__node">Node.js</p>
-                <p className="stack__express">Express</p>
+                <p className="stack__item">HTML</p>
+                <p className="stack__item">SASS</p>
+                <p className="stack__item">FlexBox</p>
+                <p className="stack__item">JavaScript</p>
+                <p className="stack__item">Axios</p>
               </div>
               <div className="buttons">
-                <button className="buttons__live">Live Site</button>
-                <button className="buttons__git">Git Repo</button>
+                <a
+                  href="https://puddleofchords.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="buttons__live">Live Site</button>
+                </a>
+                <a
+                  href="https://github.com/Wahaj-Arsal/OpenFashion"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="buttons__git">Git Repo</button>
+                </a>
               </div>
             </div>
           </div>
