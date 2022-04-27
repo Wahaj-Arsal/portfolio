@@ -2,8 +2,6 @@
 
 import "./Footer.scss";
 
-import { Link } from "react-router-dom";
-
 import email from "../../assets/icons/email.svg";
 import linkedin from "../../assets/icons/linkedin.svg";
 import githubContact from "../../assets/icons/github.svg";
@@ -22,7 +20,7 @@ function Footer() {
         <div className="contact__icons">
           <Mailto email="a.wahaj@hotmail.co.uk">
             <div className="contact__icons-container">
-              <img className="contact__email" src={email} />
+              <img className="contact__email" src={email} alt="email logo" />
             </div>
           </Mailto>
           <a
@@ -31,7 +29,11 @@ function Footer() {
             rel="noopener noreferrer"
           >
             <div className="contact__icons-container">
-              <img className="contact__linkedin" src={linkedin} />
+              <img
+                className="contact__linkedin"
+                src={linkedin}
+                alt="linkedin logo"
+              />
             </div>
           </a>
           <a
@@ -40,7 +42,11 @@ function Footer() {
             rel="noopener noreferrer"
           >
             <div className="contact__icons-container">
-              <img className="contact__github" src={githubContact} />
+              <img
+                className="contact__github"
+                src={githubContact}
+                alt="github logo"
+              />
             </div>
           </a>
         </div>
