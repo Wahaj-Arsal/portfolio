@@ -32,7 +32,7 @@ function Home() {
           {/* <h5 className="about__name">Wahaj Arsal</h5> */}
           <h2 className="about__title">About Me</h2>
           <div className="about__information">
-            <img className="about__image" src={profiePicture} />
+            <img className="about__image" src={profiePicture} alt="profile" />
             <p className="about__text">
               I'm Wahaj, a recent bootcamp graduate with a background in Change
               Management. I have a passion for creating and building things that
@@ -48,7 +48,11 @@ function Home() {
           <h2 className="portfolio__title">Portfolio</h2>
           <div className="card">
             <div className="card__image">
-              <img className="card__picture-openfashion" src={openFashion} />
+              <img
+                className="card__picture-openfashion"
+                src={openFashion}
+                alt="website screenshot"
+              />
             </div>
             <div className="card__information">
               <h3 className="card__title">E-commerce Website - Open Fashion</h3>
@@ -89,7 +93,11 @@ function Home() {
           </div>
           <div className="card">
             <div className="card__image">
-              <img className="card__picture" src={playflix} />
+              <img
+                className="card__picture"
+                src={playflix}
+                alt="website screenshot"
+              />
             </div>
             <div className="card__information">
               <h3 className="card__title">Streaming Website - PlayFlix</h3>
@@ -130,7 +138,11 @@ function Home() {
           </div>
           <div className="card">
             <div className="card__image">
-              <img className="card__picture" src={chords} />
+              <img
+                className="card__picture"
+                src={chords}
+                alt="website screenshot"
+              />
             </div>
             <div className="card__information">
               <h3 className="card__title">Music Site - Puddle of Chords</h3>
@@ -171,16 +183,32 @@ function Home() {
         <div className="skills">
           <h2 className="skills__title">Skills</h2>
           <div className="skills__images">
-            <img className="skills__icon" src={html} />
-            <img className="skills__icon" src={javascript} />
-            <img className="skills__icon" src={scss} />
-            <img className="skills__icon" src={react} />
-            <img className="skills__icon" src={node} />
-            <img className="skills__icon skills__icon-margin" src={express} />
-            <img className="skills__icon" src={github} />
-            <img className="skills__icon" src={stripe} />
-            <img className="skills__icon skills__icon-margin" src={twilio} />
-            <img className="skills__icon skills__icon-margin" src={mapbox} />
+            <img className="skills__icon" src={html} alt="html icon" />
+            <img
+              className="skills__icon"
+              src={javascript}
+              alt="javascript icon"
+            />
+            <img className="skills__icon" src={scss} alt="sass icon" />
+            <img className="skills__icon" src={react} alt="react icon" />
+            <img className="skills__icon" src={node} alt="node icon" />
+            <img
+              className="skills__icon skills__icon-margin"
+              src={express}
+              alt="express icon"
+            />
+            <img className="skills__icon" src={github} alt="github icon" />
+            <img className="skills__icon" src={stripe} alt="stripe icon" />
+            <img
+              className="skills__icon skills__icon-margin"
+              src={twilio}
+              alt="twilio icon"
+            />
+            <img
+              className="skills__icon skills__icon-margin"
+              src={mapbox}
+              alt="mapbox icon"
+            />
           </div>
         </div>
       </div>
