@@ -2,7 +2,7 @@
 
 import "./Home.scss";
 
-import profiePicture from "../../assets/images/wahaj.jpg";
+import profilePicture from "../../assets/images/wahaj.jpg";
 import openFashion from "../../assets/images/openfashion.jpg";
 import playflix from "../../assets/images/playflix.jpg";
 import chords from "../../assets/images/chords.jpg";
@@ -32,7 +32,7 @@ function Home() {
           {/* <h5 className="about__name">Wahaj Arsal</h5> */}
           <h2 className="about__title">About Me</h2>
           <div className="about__information">
-            <img className="about__image" src={profiePicture} alt="profile" />
+            <img className="about__image" src={profilePicture} alt="profile" />
             <p className="about__text">
               I'm Wahaj, a recent bootcamp graduate with a background in Change
               Management. I have a passion for creating and building things that
@@ -168,7 +168,7 @@ function Home() {
                   <button className="buttons__live">Live Site</button>
                 </a>
                 <a
-                  href="https://github.com/Wahaj-Arsal/OpenFashion"
+                  href="https://github.com/Wahaj-Arsal/Chords"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

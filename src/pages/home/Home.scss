@@ -65,11 +65,11 @@
     }
   }
   &__image {
-    width: 100%;
+    width: 60%;
     border-radius: 50%;
     padding: 1rem 0;
     @include tablet {
-      width: 60%;
+      width: 45%;
     }
     @include desktop {
       width: 45%;
@@ -117,23 +117,42 @@
   width: 100%;
   // height: 100vh;
   padding: 2rem 0;
+  @include tablet {
+    padding: 2rem 2rem;
+  }
+  @include desktop {
+    @include flex(row, center, center);
+  }
   &__image {
     width: 100%;
     text-align: center;
     padding: 1rem 0;
+    @include desktop {
+      padding: 0;
+    }
   }
   &__picture-openfashion {
     width: 60%;
     height: 40%;
+    @include tablet {
+      width: 50%;
+      height: 60%;
+    }
   }
   &__picture {
     width: 100%;
     height: 40%;
+    @include desktop {
+      height: 280px;
+    }
   }
   &__information {
     color: $text-light;
     padding: 1rem 0;
     width: 100%;
+    @include desktop {
+      padding: 0 0 0 2rem;
+    }
   }
   &__title {
     @include m-t-d-h4;
@@ -151,17 +170,26 @@
   padding: 0.5rem 0 1rem 0;
   width: 100%;
   // border-top: 1px solid $text-light-accent;
+  @include tablet {
+    @include flex(row, flex-start, center);
+  }
   &__item {
     @include flex(row, center, center);
     @include m-t-d-text-small;
     width: 5rem;
     margin: 0.25rem 0.5rem;
     border: 2px solid $background-button;
+    @include tablet {
+      margin: 0.25rem 1rem 0.25rem 0;
+    }
   }
 }
 .buttons {
   @include flex(row, space-evenly, center);
   padding: 1rem 0;
+  @include tablet {
+    @include flex(row, flex-start, center);
+  }
   &__live {
     @include m-t-d-label;
     background-color: $background-button;
@@ -173,6 +201,9 @@
     &:hover {
       background-color: $text-light;
       color: $background-button;
+    }
+    @include tablet {
+      margin: 0 1rem 0 0;
     }
   }
   &__git {
