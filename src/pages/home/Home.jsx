@@ -34,11 +34,11 @@ function Home() {
           <div className="about__information">
             <img className="about__image" src={profilePicture} alt="profile" />
             <p className="about__text">
-              I'm Wahaj, a recent bootcamp graduate with a background in Change
-              Management. I have a passion for creating and building things that
-              make a difference. <br />I want to combine my skills as a
-              developer and change manager to create meaningful solutions which
-              are fit for purpose.
+              I'm Wahaj, a recent bootcamp graduate with a background in
+              Business Analysis and Projects. I have a passion for creating and
+              building things that make a difference. <br />I want to combine my
+              skills as a developer and Business Analysis to create meaningful
+              solutions which are fit for purpose.
             </p>
           </div>
         </div>
