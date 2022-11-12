@@ -150,7 +150,7 @@ function Home() {
                 A response react application with mobile first design. <br />
                 BEM naming convention. <br />
                 Animations to bring the website to life. <br />
-                DOM Manipulation to
+                DOM Manipulation to dynamically add, remove and modify elements.
               </p>
               <div className="stack">
                 <p className="stack__item">HTML</p>
