@@ -103,12 +103,10 @@ function Home() {
               <h3 className="card__title">Streaming Website - PlayFlix</h3>
               <p className="card__text">
                 PlayFlix is a full stack web application with responsive design.
-              </p>
-              <p className="card__text">
+                <br />
                 PlayFlix is a demo streaming website which allows users to
                 upload videos, create and delete comments.
-              </p>
-              <p className="card__text">
+                <br />
                 React Router Dom v5.3 with routes to each page.
               </p>
               <div className="stack">
