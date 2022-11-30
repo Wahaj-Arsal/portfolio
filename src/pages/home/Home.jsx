@@ -75,7 +75,7 @@ function Home() {
               </div>
               <div className="buttons">
                 <a
-                  href="https://openfashion.netlify.app"
+                  href="https://openfashion.onrender.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
