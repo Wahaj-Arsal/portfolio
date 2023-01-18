@@ -118,7 +118,7 @@ function Home() {
               </div>
               <div className="buttons">
                 <a
-                  href="https://playflix-6b2a0.netlify.app"
+                  href="https://playflix.onrender.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
