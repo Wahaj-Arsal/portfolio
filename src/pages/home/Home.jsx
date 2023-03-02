@@ -22,6 +22,13 @@ const TRACKING_ID = "G-KBKWPQJWQL"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
 function Home() {
+  const useAnalyticsEventTracker = (category = "Blog category") => {
+    const eventTracker = (action = "test action", label = "test label") => {
+      ReactGA.event({ category, action, label });
+    };
+    return eventTracker;
+  };
+
   return (
     <>
       <div className="hero-container">
