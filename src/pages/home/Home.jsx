@@ -18,6 +18,7 @@ import twilio from "../../assets/images/twilio.svg";
 import mapbox from "../../assets/images/mapbox.svg";
 
 import ReactGA from "react-ga";
+import { useEffect } from "react";
 const TRACKING_ID = "G-KBKWPQJWQL"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
@@ -28,6 +29,10 @@ function Home() {
   //   };
   //   return eventTracker;
   // };
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
 
   return (
     <>
