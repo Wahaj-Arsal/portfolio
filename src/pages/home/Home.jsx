@@ -17,6 +17,10 @@ import stripe from "../../assets/images/stripe.svg";
 import twilio from "../../assets/images/twilio.svg";
 import mapbox from "../../assets/images/mapbox.svg";
 
+import ReactGA from "react-ga";
+const TRACKING_ID = "G-KBKWPQJWQL"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
+
 function Home() {
   return (
     <>
