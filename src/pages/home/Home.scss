@@ -157,9 +157,14 @@
   &__title {
     @include m-t-d-h4;
   }
-  &__text {
+  &__list {
     @include m-t-d-text-small;
     padding: 0.25rem 0;
+    text-decoration: none;
+  }
+  &__text {
+    text-decoration: none;
+    cursor: auto;
   }
 }
 

@@ -2,6 +2,8 @@
 
 import "./Home.scss";
 
+import axios from "axios";
+
 import profilePicture from "../../assets/images/wahaj.jpg";
 import openFashion from "../../assets/images/openfashion.jpg";
 import playflix from "../../assets/images/playflix.jpg";
@@ -23,17 +25,6 @@ const TRACKING_ID = "G-KBKWPQJWQL"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
 function Home() {
-  // const useAnalyticsEventTracker = (category = "Blog category") => {
-  //   const eventTracker = (action = "test action", label = "test label") => {
-  //     ReactGA.event({ category, action, label });
-  //   };
-  //   return eventTracker;
-  // };
-
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
-  }, []);
-
   return (
     <>
       <div className="hero-container">
@@ -50,11 +41,13 @@ function Home() {
           <div className="about__information">
             <img className="about__image" src={profilePicture} alt="profile" />
             <p className="about__text">
-              I'm Wahaj, a recent bootcamp graduate with a background in
-              Business Analysis and Projects. I have a passion for creating and
-              building things that make a difference. <br />I want to combine my
-              skills as a developer and Business Analysis to create meaningful
-              solutions which are fit for purpose.
+              A Full Stack Web Developer with a background in Business Analysis.
+              I'm a detail-oriented problem solver with expertise in HTML, CSS,
+              JavaScript, and React.
+              <br />
+              <br />
+              I'm passionate about building user-friendly websites and
+              applications that deliver tangible results.
             </p>
           </div>
         </div>
@@ -64,29 +57,40 @@ function Home() {
           <h2 className="portfolio__title">Portfolio</h2>
           <div className="card">
             <div className="card__image">
-              <img
-                className="card__picture-openfashion"
-                src={openFashion}
-                alt="website screenshot"
-              />
+              <a
+                href="https://openfashion.onrender.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="card__picture-openfashion"
+                  src={openFashion}
+                  alt="website screenshot"
+                />
+              </a>
             </div>
             <div className="card__information">
-              <h3 className="card__title">E-commerce Website - Open Fashion</h3>
-              <p className="card__text">
-                Open Fashion is the final project for my Full Stack Web
-                Development Bootcamp.
-              </p>
-              <p className="card__text">
-                Open Fashion is a functional e-commerce mobile website which
-                allows users to browse, filter, review and purchase clothes. The
-                website also has mapbox integration to allow users to locate and
-                get directions to their nearest store.
-              </p>
+              <h3 className="card__title">
+                Open Fashion - An E-Commerce Website
+              </h3>
+              <br />
+              <ul className="card__list">
+                <li className="card__text">
+                  A full-stack e-commerce website I created which allows users
+                  to browse, review and purchase products.
+                </li>
+                <li className="card__text">
+                  This website was created using React.js, Node.js, Stripe
+                  (payment gateway) API integration which allows users to
+                  purchase products and EmailJS which allows users to sign up to
+                  our newsletter!
+                </li>
+              </ul>
               <div className="stack">
                 <p className="stack__item">React</p>
                 <p className="stack__item">Node.js</p>
                 <p className="stack__item">Stripe</p>
-                <p className="stack__item">Twilio</p>
+                <p className="stack__item">EmailJS</p>
                 <p className="stack__item">MapBox</p>
               </div>
               <div className="buttons">
@@ -95,36 +99,48 @@ function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="buttons__live">Live Site</button>
+                  <button className="buttons__live">Preview Website</button>
                 </a>
                 <a
                   href="https://github.com/Wahaj-Arsal/OpenFashion"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="buttons__git">Git Repo</button>
+                  <button className="buttons__git">GitHub Repository</button>
                 </a>
               </div>
             </div>
           </div>
           <div className="card">
             <div className="card__image">
-              <img
-                className="card__picture"
-                src={playflix}
-                alt="website screenshot"
-              />
+              <a
+                href="https://playflix.onrender.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="card__picture"
+                  src={playflix}
+                  alt="website screenshot"
+                />
+              </a>
             </div>
             <div className="card__information">
               <h3 className="card__title">Streaming Website - PlayFlix</h3>
-              <p className="card__text">
-                PlayFlix is a full stack web application with responsive design.
-                <br />
-                PlayFlix is a demo streaming website which allows users to
-                upload videos, create and delete comments.
-                <br />
-                React Router Dom v5.3 with routes to each page.
-              </p>
+              <br />
+              <ul className="card__list">
+                <li className="card__text">
+                  PlayFlix is a full stack web application with responsive
+                  design.
+                </li>
+                <li className="card__text">
+                  PlayFlix is a demo streaming website which allows users to
+                  upload videos, create and delete comments.
+                </li>
+                <li className="card__text">
+                  React Router Dom v5.3 with routes to each page.
+                </li>
+              </ul>
               <div className="stack">
                 <p className="stack__item">HTML</p>
                 <p className="stack__item">SASS</p>
@@ -138,34 +154,47 @@ function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="buttons__live">Live Site</button>
+                  <button className="buttons__live">Preview Website</button>
                 </a>
                 <a
                   href="https://github.com/Wahaj-Arsal/Play_Flix"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="buttons__git">Git Repo</button>
+                  <button className="buttons__git">GitHub Repository</button>
                 </a>
               </div>
             </div>
           </div>
           <div className="card">
             <div className="card__image">
-              <img
-                className="card__picture"
-                src={chords}
-                alt="website screenshot"
-              />
+              <a
+                href="https://github.com/Wahaj-Arsal/Chords"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="card__picture"
+                  src={chords}
+                  alt="website screenshot"
+                />
+              </a>
             </div>
             <div className="card__information">
               <h3 className="card__title">Music Site - Puddle of Chords</h3>
-              <p className="card__text">
-                A response react application with mobile first design. <br />
-                BEM naming convention. <br />
-                Animations to bring the website to life. <br />
-                DOM Manipulation to dynamically add, remove and modify elements.
-              </p>
+              <ul className="card__list">
+                <li className="card__text">
+                  A response react application with mobile first design.
+                </li>
+                <li className="card__text">BEM naming convention.</li>
+                <li className="card__text">
+                  Animations to bring the website to life.
+                </li>
+                <li className="card__text">
+                  DOM Manipulation to dynamically add, remove and modify
+                  elements.
+                </li>
+              </ul>
               <div className="stack">
                 <p className="stack__item">HTML</p>
                 <p className="stack__item">SASS</p>
@@ -179,14 +208,14 @@ function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="buttons__live">Live Site</button>
+                  <button className="buttons__live">Preview Website</button>
                 </a>
                 <a
                   href="https://github.com/Wahaj-Arsal/Chords"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="buttons__git">Git Repo</button>
+                  <button className="buttons__git">GitHub Repository</button>
                 </a>
               </div>
             </div>
