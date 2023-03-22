@@ -1,0 +1,142 @@
+/** @format */
+
+@use "./variables" as *;
+
+@font-face {
+  font-family: "Epilogue";
+  src: url("../assets/fonts/Epilogue-Regular.ttf");
+  font-weight: 400;
+  font-style: none;
+}
+
+@font-face {
+  font-family: "Epilogue";
+  src: url("../assets/fonts/Epilogue-Bold.ttf");
+  font-weight: 700;
+  font-style: none;
+}
+
+@font-face {
+  font-family: "Epilogue";
+  src: url("../assets/fonts/Epilogue-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: none;
+}
+
+@font-face {
+  font-family: "Epilogue";
+  src: url("../assets/fonts/Epilogue-Black.ttf");
+  font-weight: 900;
+  font-style: none;
+}
+
+@mixin m-t-d-h1 {
+  font-family: Epilogue, "serif";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  letter-spacing: -0.125rem;
+  //   color: $text-light;
+}
+
+@mixin m-t-d-h2 {
+  font-family: Epilogue, "serif";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  letter-spacing: -1px;
+  //   color: $text-light;
+}
+
+@mixin m-t-d-h3 {
+  font-family: Epilogue, "serif";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  //   color: $text-light;
+}
+
+@mixin m-t-d-h4 {
+  font-family: Epilogue, "serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  //   color: $text-light;
+}
+
+@mixin m-t-d-h5 {
+  font-family: Epilogue, "serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  //   color: $text-light-accent;
+}
+
+@mixin m-t-d-label {
+  font-family: Epilogue, "serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  text-transform: uppercase;
+  //   color: $text-light;
+}
+
+@mixin m-t-d-text-big {
+  font-family: Epilogue, "serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  //   color: $text-light;
+}
+
+@mixin m-t-d-text {
+  font-family: Epilogue, "serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+  //   color: $text-light;
+}
+
+@mixin m-t-d-text-grey {
+  font-family: Epilogue, "serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+  //   color: $text-light-grey;
+}
+
+@mixin m-t-d-text-small {
+  font-family: Epilogue, "serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  //   color: $text-light-grey;
+}
+
+@mixin m-t-d-button {
+  font-family: Epilogue, "serif";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  text-transofrm: uppercase;
+}
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
