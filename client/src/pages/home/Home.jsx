@@ -2,8 +2,6 @@
 
 import "./Home.scss";
 
-import axios from "axios";
-
 import profilePicture from "../../assets/images/wahaj.jpg";
 import openFashion from "../../assets/images/openfashion.jpg";
 import playflix from "../../assets/images/playflix.jpg";
@@ -20,7 +18,6 @@ import twilio from "../../assets/images/twilio.svg";
 import mapbox from "../../assets/images/mapbox.svg";
 
 import ReactGA from "react-ga";
-import { useEffect } from "react";
 const TRACKING_ID = "G-KBKWPQJWQL"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
