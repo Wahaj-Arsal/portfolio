@@ -34,12 +34,12 @@
   }
   &__title {
     @include m-t-d-h3;
-    padding: 2rem 0 0.5rem 0;
+    padding: 0.5rem 0 0.5rem 0;
     color: $text-light;
   }
   &__name {
     @include m-t-d-h5;
-    padding: 0.5rem 0 1rem 0;
+    padding: 2rem 0 0.5rem 0;
     color: $text-light-accent;
   }
 }
