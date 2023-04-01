@@ -1,18 +1,34 @@
 /** @format */
 
 import "./Portfolio.scss";
-import Project from "../project/Project";
+import Project from "../project/Project.jsx";
+
+import { Projects } from "../constants/ProjectInfo.js";
 
 import React from "react";
 
 export default function Portfolio() {
+  // console.log(openFashion.title);
   return (
     <div className="portfolio-container">
       <div className="portfolio">
         <h5 className="portfolio__name">Portfolio</h5>
         <h2 className="portfolio__title">Latest Work</h2>
       </div>
-      <Project />
+      {Projects.map((project, index) => {
+        return (
+          <Project
+            key={index}
+            title={project.title}
+            cardName={project.cardName}
+            summary={project.summary}
+            stack={project.stack}
+            github={project.github}
+            url={project.url}
+            image={project.image}
+          />
+        );
+      })}
     </div>
 
     // <div className="portfolio-container">

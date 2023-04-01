@@ -23,6 +23,24 @@ export default function About() {
             I'm passionate about building user-friendly websites and
             applications that deliver tangible results.
           </p>
+          <div>
+            <h5 className="skills">
+              Here are some of the technologies I have worked with
+            </h5>
+            <ul className="about__tech">
+              <li className="about__skill">HTML/HTML5</li>
+              <li className="about__skill">CSS/CSS3</li>
+              <li className="about__skill">SASS</li>
+              <li className="about__skill">JavaScript</li>
+              <li className="about__skill">React.js</li>
+              <li className="about__skill">Node.js</li>
+              <li className="about__skill">Express.js</li>
+              <li className="about__skill">MySQL</li>
+              <li className="about__skill">Stripe</li>
+              <li className="about__skill">EmailJS</li>
+              <li className="about__skill">MapBox</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

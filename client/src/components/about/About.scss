@@ -3,6 +3,7 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 @use "../../styles/breakpoints" as *;
+@use "../../styles/resets" as *;
 
 .about-container {
   background-color: $background-light;
@@ -52,7 +53,7 @@
   &__text {
     @include m-t-d-text-big;
     color: $text-dark;
-    padding: 2rem 0rem 4rem 0rem;
+    padding: 1rem 0rem 2rem 0rem;
     @include tablet {
       padding: 2rem 0 0 0;
     }
@@ -60,4 +61,43 @@
       padding: 0 0 0 2rem;
     }
   }
+  &__tech {
+    @include m-t-d-text-big;
+    // font-size: 18px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0 1rem;
+    padding: 0 0 2rem 0;
+    margin: 0 0 2rem 0;
+    width: 100%;
+    color: $text-dark;
+    list-style: none;
+    text-decoration: none;
+    @include tablet {
+      padding: 2rem 0 0 0;
+    }
+    @include desktop {
+      padding: 0 0 0 2rem;
+    }
+  }
+  &__skill {
+    line-height: 2rem;
+    text-decoration: none;
+    list-style: none;
+    cursor: default;
+    &::before {
+      content: ">";
+      @include m-t-d-h4;
+      padding: 0 0.5rem 0 0;
+      left: 0px;
+      color: $text-light-accent;
+    }
+  }
+}
+
+.skills {
+  @include m-t-d-h5;
+  margin: 0 0;
+  padding: 0 0 1rem 0;
+  color: $text-light-accent;
 }

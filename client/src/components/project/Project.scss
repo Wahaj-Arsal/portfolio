@@ -3,6 +3,7 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 @use "../../styles/breakpoints" as *;
+@use "../../styles/resets" as *;
 
 .project-container {
   background-color: $background-dark;

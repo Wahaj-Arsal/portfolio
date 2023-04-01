@@ -13,12 +13,12 @@ ReactGA.initialize(TRACKING_ID);
 
 function Home() {
   return (
-    <>
+    <section className="home-container">
       <HeroTitle />
       <About />
       <Portfolio />
       <Skills />
-    </>
+    </section>
   );
 }
 
