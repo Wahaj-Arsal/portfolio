@@ -2,7 +2,7 @@
 
 import "./Navbar.scss";
 
-import logo from "../../assets/icons/logo.png";
+import logo from "../../assets/icons/logo.svg";
 import burgerMenu from "../../assets/icons/burgerMenu.svg";
 
 import React, { useState } from "react";

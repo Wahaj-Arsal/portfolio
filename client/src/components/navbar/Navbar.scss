@@ -32,10 +32,12 @@
     line-height: 1.25rem;
   }
   &__right {
-    width: 85%;
+    @include flex(row, flex-start, center);
+    // width: 100%;
   }
   &__image {
-    width: 100%;
+    // width: 100%;
+    cursor: pointer;
   }
 }
 
