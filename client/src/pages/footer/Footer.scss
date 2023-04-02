@@ -6,7 +6,7 @@
 @use "../../styles/breakpoints" as *;
 
 .contact-container {
-  background-color: $background-dark;
+  background-color: $background-light;
 }
 
 .contact {
@@ -18,13 +18,13 @@
     margin: 0 auto;
   }
   &__title {
-    @include m-t-d-h2;
+    @include m-t-d-h3;
     padding: 4rem 0 1rem 0;
-    color: $text-light;
+    color: $text-dark;
   }
   &__description {
-    @include m-t-d-text;
-    color: $text-light;
+    @include m-t-d-text-big;
+    color: $text-dark;
     padding: 1rem 0;
   }
   &__icons {

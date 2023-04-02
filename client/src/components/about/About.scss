@@ -27,7 +27,7 @@
     color: $text-light-accent;
   }
   &__title {
-    @include m-t-d-h2;
+    @include m-t-d-h3;
     padding: 0.5rem 0 1rem 0;
     color: $text-dark;
   }

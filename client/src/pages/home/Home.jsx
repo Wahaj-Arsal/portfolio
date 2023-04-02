@@ -2,6 +2,7 @@
 
 import "./Home.scss";
 
+import Navbar from "../../components/navbar/Navbar";
 import HeroTitle from "../../components/heroTitle/HeroTitle";
 import About from "../../components/about/About";
 import Portfolio from "../../components/portfolio/Portfolio";
@@ -14,10 +15,11 @@ ReactGA.initialize(TRACKING_ID);
 function Home() {
   return (
     <section className="home-container">
+      <Navbar />
       <HeroTitle />
       <About />
       <Portfolio />
-      <Skills />
+      {/* <Skills /> */}
     </section>
   );
 }
