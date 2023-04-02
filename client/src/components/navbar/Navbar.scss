@@ -9,19 +9,32 @@
   background-color: $background-dark;
   outline: none;
   border: none;
+  // padding: 0 1rem;
+  // margin: 0 auto;
 }
 
 .burger-menu {
+  @include flex(row, center, center);
   max-width: 1020px;
   margin: 0 1rem;
-  padding: 0 1rem;
-  @include flex(row, flex-start, center);
-  padding: 1rem 0 0 0;
+  padding: 1rem 0 1rem 0;
+  @include tablet {
+    @include flex(row, center, center);
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
   &__left {
     @include flex(row, flex-start, center);
+    @include tablet {
+      width: 40%;
+    }
   }
   &__logo {
     width: 10%;
+    @include tablet {
+      width: 30%;
+    }
   }
   &__text {
     @include m-t-d-text;
@@ -34,6 +47,10 @@
   &__right {
     @include flex(row, flex-start, center);
     // width: 100%;
+    @include tablet {
+      visibility: hidden;
+      display: none;
+    }
   }
   &__image {
     // width: 100%;
@@ -42,6 +59,42 @@
 }
 
 .menu {
+  visibility: hidden;
+  display: none;
+  width: 100%;
+  @include tablet {
+    visibility: visible;
+    display: flex;
+    width: 100%;
+  }
+  &__list {
+    @include tablet {
+      @include flex(row, flex-end, center);
+      color: $text-light;
+      // font-weight: bold;
+      list-style-type: none;
+      width: 100%;
+    }
+  }
+  &__item {
+    @include tablet {
+      padding: 0 0.75rem;
+      // margin: 0 1rem;
+      // width: 30%;
+    }
+  }
+  &__button {
+    @include tablet {
+      @include m-t-d-text-big;
+      background-color: $background-dark;
+      color: $text-light-accent;
+      border: 1px solid $text-dark-accent;
+      font-size: 18px;
+      margin: 0 0 0 0.75rem;
+      padding: 0.25rem 2rem;
+      border-radius: 0.25rem;
+    }
+  }
 }
 
 .sideBar-container {

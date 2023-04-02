@@ -23,7 +23,7 @@ export default function About() {
             I'm passionate about building user-friendly websites and
             applications that deliver tangible results.
           </p>
-          <div>
+          <div className="skills-container">
             <h5 className="skills">
               Here are some of the technologies I have worked with
             </h5>

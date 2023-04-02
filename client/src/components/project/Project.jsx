@@ -4,8 +4,8 @@ import "./Project.scss";
 
 import React from "react";
 
-import gitHub from "../../assets/icons/github_v2.png";
-import externalLink from "../../assets/icons/externalLink.png";
+import gitHub from "../../assets/icons/github_v2.svg";
+import externalLink from "../../assets/icons/externalLink.svg";
 
 export default function Project({
   title,
@@ -43,12 +43,20 @@ export default function Project({
             <div className="card__links">
               <div className="card__github">
                 <a href={github} target="_blank" rel="noopener noreferrer">
-                  <img src={gitHub} alt="github icon" />
+                  <img
+                    className="card__github-image"
+                    src={gitHub}
+                    alt="github icon"
+                  />
                 </a>
               </div>
               <div className="card__website">
                 <a href={url} target="_blank" rel="noopener noreferrer">
-                  <img src={externalLink} alt="external link icon" />
+                  <img
+                    className="card__website-image"
+                    src={externalLink}
+                    alt="external link icon"
+                  />
                 </a>
               </div>
             </div>

@@ -14,6 +14,12 @@
   max-width: 1020px;
   margin: 0 1rem;
   padding: 0 1rem 4rem 1rem;
+  @include tablet {
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .card {
@@ -22,6 +28,12 @@
   @include flex(row, center, center);
   max-width: 1020px;
   width: 100%;
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+  }
 
   &__left {
     @include flex(row, center, center);
@@ -36,6 +48,12 @@
     height: 100%;
     width: 100%;
     opacity: 12%;
+    @include tablet {
+      grid-column-start: 1;
+      grid-row-start: 1;
+      grid-column-end: 4;
+      grid-row-end: 3;
+    }
   }
   &__right {
     @include flex(column, space-evenly, flex-start);
@@ -46,18 +64,37 @@
     top: 0px;
     left: 0px;
     padding: 0 0.5rem;
+    @include tablet {
+      // display: grid;
+      // grid-template-columns: repeat(1, 1fr);
+      position: absolute;
+      grid-column-start: 2;
+      // border: 1px solid red;
+      padding: 0 1rem 0 1rem;
+
+      // margin: 0 0 1rem 0;
+    }
   }
   &__title {
     font-size: 20px;
     color: $text-light;
+    @include tablet {
+      font-size: 30px;
+    }
   }
   &__name {
     font-size: 16px;
     color: $text-light-accent;
+    @include tablet {
+      font-size: 26px;
+    }
   }
   &__information {
     font-size: 13px;
     color: $text-light;
+    @include tablet {
+      font-size: 23px;
+    }
   }
   &__summary {
   }
@@ -74,15 +111,32 @@
     &:nth-child(even) {
       padding: 0rem 0.5rem 0rem 0;
     }
+    @include tablet {
+      font-size: 23px;
+    }
   }
   &__links {
     @include flex(row, flex-start, center);
   }
   &__github {
     padding: 0 0.5rem 0 0;
+    width: 100%;
+    &-image {
+      width: 100%;
+      @include tablet {
+        width: 3rem;
+      }
+    }
   }
   &__website {
     padding: 0 0 0 0.5rem;
+    width: 100%;
+    &-image {
+      width: 100%;
+      @include tablet {
+        width: 3rem;
+      }
+    }
   }
 }
 

@@ -31,15 +31,15 @@ export default function Navbar() {
               onClick={showSideBar}
             />
           </div>
+          <div className="menu">
+            <ul className="menu__list">
+              <li className="menu__item">About Me</li>
+              <li className="menu__item">Latest Work</li>
+              <li className="menu__item">Contact Me</li>
+              <button className="menu__button">Resume</button>
+            </ul>
+          </div>
         </div>
-        {/* <div className="menu">
-        <ul>
-          <li>About Me</li>
-          <li>Latest Work</li>
-          <li>Contact Me</li>
-          <button>Resume</button>
-        </ul>
-      </div> */}
       </section>
       <section
         className={
