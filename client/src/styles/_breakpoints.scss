@@ -1,13 +1,21 @@
 /** @format */
 
 $mobile-min-width: 320px;
-$mobile-max-width: 767px;
+$mobile-max-width: 425px;
+$medium-min-width: 426px;
+$medium-max-width: 767px;
 $tablet-min-width: 768px;
 $desktop-min-width: 1280px;
 
 /* media query for mobile */
 @mixin small {
   @media only screen and (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (min-width: $medium-min-width) and (max-width: $medium-max-width) {
     @content;
   }
 }
