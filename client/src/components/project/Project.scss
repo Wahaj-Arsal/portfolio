@@ -11,12 +11,13 @@
 
 .project {
   @include flex(column, center, center);
-  max-width: 1020px;
+  max-width: 1440px;
   margin: 0 1rem;
   padding: 0 1rem 4rem 1rem;
   @include tablet {
     margin: 0 auto;
-    padding: 2rem 3rem;
+    padding: 4rem 3.5rem;
+    // padding: 2rem 3rem;
     // display: grid;
     // grid-template-columns: repeat(2, 1fr);
   }
@@ -26,11 +27,23 @@
   display: block;
   position: relative;
   @include flex(row, center, center);
-  max-width: 1020px;
+  // max-width: 1280px;
   width: 100%;
   @include tablet {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+  }
+  @include desktop-small {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+  }
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(2, 1fr);
     position: relative;
   }
@@ -54,6 +67,12 @@
       grid-column-end: 4;
       grid-row-end: 3;
     }
+    @include desktop {
+      grid-column-start: 1;
+      grid-row-start: 1;
+      grid-column-end: 6;
+      grid-row-end: 3;
+    }
   }
   &__right {
     @include flex(column, space-evenly, flex-start);
@@ -67,31 +86,50 @@
     @include medium {
       @include flex(column, space-evenly, flex-start);
       width: 100%;
-      padding: 3rem 0;
+      padding: 1rem 1rem;
     }
     @include tablet {
-      // display: grid;
-      // grid-template-columns: repeat(1, 1fr);
       position: absolute;
       grid-column-start: 2;
-      // border: 1px solid red;
       padding: 0 1rem 0 1rem;
 
       // margin: 0 0 1rem 0;
+    }
+    @include desktop-small {
+      grid-column-start: 3;
+    }
+    @include desktop {
+      grid-column-start: 6;
+      grid-row-start: 1;
+      grid-column-end: 11;
+      grid-row-end: 3;
+      padding: 0 0 0 1.5rem;
     }
   }
   &__title {
     font-size: 20px;
     color: $text-light;
+    @include medium {
+      font-size: 26px;
+    }
     @include tablet {
       font-size: 30px;
+    }
+    @include desktop {
+      font-size: 25px;
     }
   }
   &__name {
     font-size: 16px;
     color: $text-light-accent;
+    @include medium {
+      font-size: 20px;
+    }
     @include tablet {
       font-size: 26px;
+    }
+    @include desktop {
+      font-size: 1.25rem;
     }
   }
   &__information {
@@ -102,8 +140,14 @@
     }
   }
   &__summary {
+    @include medium {
+      font-size: 16px;
+    }
     @include tablet {
       font-size: 20px;
+    }
+    @include desktop {
+      font-size: 1rem;
     }
   }
   &__tech-stack {
@@ -114,13 +158,22 @@
     font-size: 13px;
     color: $text-light-accent;
     &:nth-child(odd) {
-      padding: 0rem 0.5rem 0rem 0;
+      padding: 0rem 1rem 0rem 0rem;
     }
     &:nth-child(even) {
-      padding: 0rem 0.5rem 0rem 0;
+      padding: 0rem 1rem 0rem 0rem;
+    }
+    // &:nth-child(1) {
+    //   padding: 0rem 1rem 0rem 0rem;
+    // }
+    @include medium {
+      font-size: 16px;
     }
     @include tablet {
       font-size: 23px;
+    }
+    @include desktop {
+      font-size: 1.25rem;
     }
   }
   &__links {
@@ -131,8 +184,17 @@
     width: 100%;
     &-image {
       width: 100%;
+      @include medium {
+        width: 1.75rem;
+      }
       @include tablet {
         width: 3rem;
+      }
+      @include desktop-small {
+        width: 2.5rem;
+      }
+      @include desktop {
+        width: 2.5rem;
       }
     }
   }
@@ -141,124 +203,18 @@
     width: 100%;
     &-image {
       width: 100%;
+      @include medium {
+        width: 1.75rem;
+      }
       @include tablet {
         width: 3rem;
+      }
+      @include desktop-small {
+        width: 2.5rem;
+      }
+      @include desktop {
+        width: 2.25rem;
       }
     }
   }
 }
-
-// .card {
-//   @include flex(column, center, flex-start);
-//   background-color: $background-dark;
-//   width: 100%;
-//   // height: 100vh;
-//   padding: 2rem 0;
-//   @include tablet {
-//     padding: 2rem 2rem;
-//   }
-//   @include desktop {
-//     @include flex(row, center, center);
-//   }
-//   &__image {
-//     width: 100%;
-//     text-align: center;
-//     padding: 1rem 0;
-//     @include desktop {
-//       padding: 0;
-//     }
-//   }
-//   &__picture-openfashion {
-//     width: 60%;
-//     height: 40%;
-//     @include tablet {
-//       width: 50%;
-//       height: 60%;
-//     }
-//   }
-//   &__picture {
-//     width: 100%;
-//     height: 40%;
-//     @include desktop {
-//       height: 280px;
-//     }
-//   }
-//   &__information {
-//     color: $text-light;
-//     padding: 1rem 0;
-//     width: 100%;
-//     @include desktop {
-//       padding: 0 0 0 2rem;
-//     }
-//   }
-//   &__title {
-//     @include m-t-d-h4;
-//   }
-//   &__list {
-//     @include m-t-d-text-small;
-//     padding: 0.25rem 0;
-//     text-decoration: none;
-//   }
-//   &__text {
-//     text-decoration: none;
-//     cursor: auto;
-//   }
-// }
-
-// .stack {
-//   @include flex(row, flex-start, center);
-//   flex-wrap: wrap;
-//   margin: 0.75rem 0 0 0;
-//   padding: 0.5rem 0 1rem 0;
-//   width: 100%;
-//   // border-top: 1px solid $text-light-accent;
-//   @include tablet {
-//     @include flex(row, flex-start, center);
-//   }
-//   &__item {
-//     @include flex(row, center, center);
-//     @include m-t-d-text-small;
-//     width: 5rem;
-//     margin: 0.25rem 0.5rem;
-//     border: 2px solid $background-button;
-//     @include tablet {
-//       margin: 0.25rem 1rem 0.25rem 0;
-//     }
-//   }
-// }
-// .buttons {
-//   @include flex(row, space-evenly, center);
-//   padding: 1rem 0;
-//   @include tablet {
-//     @include flex(row, flex-start, center);
-//   }
-//   &__live {
-//     @include m-t-d-label;
-//     background-color: $background-button;
-//     color: $text-light;
-//     padding: 0.75rem 2rem;
-//     border-radius: 6px;
-//     outline: none;
-//     border: none;
-//     &:hover {
-//       background-color: $text-light;
-//       color: $background-button;
-//     }
-//     @include tablet {
-//       margin: 0 1rem 0 0;
-//     }
-//   }
-//   &__git {
-//     @include m-t-d-label;
-//     padding: 0.75rem 2rem;
-//     border-radius: 6px;
-//     border: none;
-//     outline: none;
-//     background-color: $text-light;
-//     color: $background-button;
-//     &:hover {
-//       background-color: $background-button;
-//       color: $text-light;
-//     }
-//   }
-// }

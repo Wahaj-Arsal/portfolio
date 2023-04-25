@@ -14,8 +14,8 @@
 }
 
 .burger-menu {
-  @include flex(row, center, center);
-  max-width: 1020px;
+  @include flex(row, space-between, center);
+  max-width: 1440px;
   margin: 0 1rem;
   padding: 1rem 0 1rem 0;
   @include tablet {
@@ -31,7 +31,7 @@
     }
   }
   &__logo {
-    width: 10%;
+    width: 20%;
     @include tablet {
       width: 30%;
     }
@@ -41,7 +41,7 @@
     font-size: 14px;
     color: $text-light;
     font-weight: bold;
-    padding: 0 0 0 0.5rem;
+    // padding: 0 0 0 0.5rem;
     line-height: 1.25rem;
   }
   &__right {
