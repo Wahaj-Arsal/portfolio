@@ -7,6 +7,7 @@ import HeroTitle from "../../components/heroTitle/HeroTitle";
 import About from "../../components/about/About";
 import Portfolio from "../../components/portfolio/Portfolio";
 import Skills from "../../components/skills/Skills";
+import Footer from "../footer/Footer";
 
 import ReactGA from "react-ga";
 const TRACKING_ID = "G-KBKWPQJWQL"; // OUR_TRACKING_ID
@@ -20,6 +21,7 @@ function Home() {
       <About />
       <Portfolio />
       {/* <Skills /> */}
+      <Footer />
     </section>
   );
 }

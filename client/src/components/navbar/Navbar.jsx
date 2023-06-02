@@ -33,9 +33,21 @@ export default function Navbar() {
           </div>
           <div className="menu">
             <ul className="menu__list">
-              <li className="menu__item">About Me</li>
-              <li className="menu__item">Latest Work</li>
-              <li className="menu__item">Contact Me</li>
+              <li className="menu__item">
+                <a className="menu__list" href="#AboutMe">
+                  About Me
+                </a>
+              </li>
+              <li className="menu__item">
+                <a className="menu__list" href="#LatestWork">
+                  Latest Work
+                </a>
+              </li>
+              <li className="menu__item">
+                <a className="menu__list" href="#ContactMe">
+                  Contact Me
+                </a>
+              </li>
               <button className="menu__button">Resume</button>
             </ul>
           </div>

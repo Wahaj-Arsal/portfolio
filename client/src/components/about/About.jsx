@@ -8,7 +8,7 @@ import profilePicture from "../../assets/images/about_image.png";
 
 export default function About() {
   return (
-    <div className="about-container">
+    <div id="AboutMe" className="about-container">
       <div className="about">
         <h5 className="about__name">Wahaj Arsal</h5>
         <h2 className="about__title">About Me</h2>

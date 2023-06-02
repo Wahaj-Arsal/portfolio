@@ -10,7 +10,7 @@ import React from "react";
 export default function Portfolio() {
   // console.log(openFashion.title);
   return (
-    <div className="portfolio-container">
+    <div id="LatestWork" className="portfolio-container">
       <div className="portfolio">
         <h5 className="portfolio__name">Portfolio</h5>
         <h2 className="portfolio__title">Latest Work</h2>

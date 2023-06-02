@@ -12,7 +12,7 @@ function Footer() {
     return <a href={`mailto:${email}`}>{props.children}</a>;
   }
   return (
-    <div className="contact-container">
+    <div id="ContactMe" className="contact-container">
       <div className="contact">
         <h2 className="contact__title">Contact Me</h2>
         <p className="contact__description">

@@ -6,7 +6,6 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Home from "./pages/home/Home.jsx";
-import Footer from "./pages/footer/Footer.jsx";
 
 import ReactGA from "react-ga";
 const TRACKING_ID = "G-KBKWPQJWQL"; // OUR_TRACKING_ID
@@ -18,7 +17,6 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home props />} />
       </Routes>
-      <Footer />
     </>
   );
 }
