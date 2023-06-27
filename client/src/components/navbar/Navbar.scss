@@ -117,12 +117,14 @@
   background-color: $background-dark;
   font-size: 18px;
   color: $text-light;
-  padding: 0 1rem;
+  padding: 0 1rem 2rem 1rem;
   position: absolute;
   width: 100%;
   &__list {
     @include flex(column, center, center);
+    color: $text-light;
     list-style-type: none;
+    text-decoration: none;
   }
   &__item {
     padding: 0.5rem 0;

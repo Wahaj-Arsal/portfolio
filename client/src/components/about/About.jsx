@@ -18,12 +18,20 @@ export default function About() {
           </div>
           <div className="about__details">
             <p className="about__text">
-              A Full Stack Web Developer with a background in Business Analysis.
-              I'm a detail-oriented problem solver with expertise in HTML, CSS,
-              JavaScript, and React.
+              I am a dedicated Software Developer with a strong background in
+              Business Analysis. I am driven by a passion for crafting
+              user-friendly interfaces that not only meet client objectives but
+              also generate tangible results.
               <br />
-              I'm passionate about building user-friendly websites and
-              applications that deliver tangible results.
+              <br />
+              With meticulous attention to detail and a knack for
+              problem-solving, I ensure every aspect of my work contributes to a
+              seamless user experience.
+              <br />
+              <br />
+              By combining my technical skills with an analytical mindset, I am
+              committed to developing impactful digital experiences that drive
+              success.
               <br />
             </p>
             <div className="skills-container">
@@ -35,6 +43,7 @@ export default function About() {
                 <li className="about__skill">CSS/CSS3</li>
                 <li className="about__skill">SCSS</li>
                 <li className="about__skill">JavaScript</li>
+                <li className="about__skill">TypeScript</li>
                 <li className="about__skill">React.js</li>
                 <li className="about__skill">Angular</li>
                 <li className="about__skill">Node.js</li>

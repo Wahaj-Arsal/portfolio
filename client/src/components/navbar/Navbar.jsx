@@ -48,7 +48,7 @@ export default function Navbar() {
                   Contact Me
                 </a>
               </li>
-              <button className="menu__button">Resume</button>
+              {/* <button className="menu__button">Resume</button> */}
             </ul>
           </div>
         </div>
@@ -62,10 +62,22 @@ export default function Navbar() {
       >
         <div className="sideBar-menu">
           <ul className="sideBar-menu__list">
-            <li className="sideBar-menu__item">About Me</li>
-            <li className="sideBar-menu__item">Latest Work</li>
-            <li className="sideBar-menu__item">Contact Me</li>
-            <button className="sideBar-menu__button">Resume</button>
+            <li className="sideBar-menu__item">
+              <a className="sideBar-menu__list" href="#AboutMe">
+                About Me
+              </a>
+            </li>
+            <li className="sideBar-menu__item">
+              <a className="sideBar-menu__list" href="#LatestWork">
+                Latest Work
+              </a>
+            </li>
+            <li className="sideBar-menu__item">
+              <a className="sideBar-menu__list" href="#ContactMe">
+                Contact Me
+              </a>
+            </li>
+            {/* <button className="sideBar-menu__button">Resume</button> */}
           </ul>
         </div>
       </section>
