@@ -1,0 +1,145 @@
+/** @format */
+
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/resets" as *;
+@use "../../styles/breakpoints" as *;
+
+.navbar-container {
+  background-color: $background-dark;
+  outline: none;
+  border: none;
+  // padding: 0 1rem;
+  // margin: 0 auto;
+}
+
+.burger-menu {
+  @include flex(row, space-between, center);
+  max-width: 1440px;
+  margin: 0 1rem;
+  padding: 1rem 0 1rem 0;
+  @include tablet {
+    @include flex(row, center, center);
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  &__left {
+    @include flex(row, flex-start, center);
+    @include tablet {
+      width: 40%;
+    }
+  }
+  &__logo {
+    width: 20%;
+    @include tablet {
+      width: 30%;
+    }
+  }
+  &__text {
+    @include m-t-d-text;
+    font-size: 14px;
+    color: $text-light;
+    font-weight: bold;
+    // padding: 0 0 0 0.5rem;
+    line-height: 1.25rem;
+  }
+  &__right {
+    @include flex(row, flex-start, center);
+    // width: 100%;
+    @include tablet {
+      visibility: hidden;
+      display: none;
+    }
+  }
+  &__image {
+    // width: 100%;
+    cursor: pointer;
+  }
+}
+
+.menu {
+  visibility: hidden;
+  display: none;
+  width: 100%;
+  @include tablet {
+    visibility: visible;
+    display: flex;
+    width: 100%;
+  }
+  &__list {
+    @include tablet {
+      @include flex(row, flex-end, center);
+      color: $text-light;
+      // font-weight: bold;
+      list-style-type: none;
+      text-decoration: none;
+      width: 100%;
+    }
+  }
+  &__item {
+    @include tablet {
+      padding: 0 0.75rem;
+      // margin: 0 1rem;
+      // width: 30%;
+    }
+  }
+  &__button {
+    @include tablet {
+      @include m-t-d-text-big;
+      background-color: $background-dark;
+      color: $text-light-accent;
+      border: 1px solid $text-dark-accent;
+      font-size: 18px;
+      margin: 0 0 0 0.75rem;
+      padding: 0.25rem 2rem;
+      border-radius: 0.25rem;
+    }
+  }
+}
+
+.sideBar-container {
+  @include flex(column, flex-start, center);
+  background-color: $background-dark;
+  max-width: 1020px;
+  position: relative;
+  width: 100%;
+  visibility: hidden;
+  z-index: 2;
+  &--active {
+    visibility: visible;
+  }
+}
+
+.sideBar-menu {
+  @include flex(column, center, center);
+  @include m-t-d-text-big;
+  background-color: $background-dark;
+  font-size: 18px;
+  color: $text-light;
+  padding: 0 1rem 2rem 1rem;
+  position: absolute;
+  width: 100%;
+  &__list {
+    @include flex(column, center, center);
+    color: $text-light;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  &__item {
+    padding: 0.5rem 0;
+    &:nth-child(1) {
+      padding: 2rem 0 0.5rem 0;
+    }
+  }
+  &__button {
+    @include m-t-d-text-big;
+    background-color: $background-dark;
+    color: $text-light-accent;
+    border: 1px solid $text-dark-accent;
+    font-size: 18px;
+    margin: 0.5rem 0 2rem 0;
+    padding: 0.5rem 3rem;
+    border-radius: 0.25rem;
+  }
+}

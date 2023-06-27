@@ -1,0 +1,35 @@
+/** @format */
+
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/breakpoints" as *;
+@use "../../styles/resets" as *;
+
+.portfolio-container {
+  background-color: $background-dark;
+  padding: 0 0 4rem 0;
+}
+
+.portfolio {
+  @include flex(column, center, flex-start);
+  max-width: 1440px;
+  margin: 0 1rem;
+  padding: 0 1rem 2rem 1rem;
+  @include tablet {
+    padding: 0 4rem;
+    margin: 0 auto;
+  }
+  @include desktop {
+    padding: 2rem 4rem 0rem 4rem;
+  }
+  &__name {
+    @include m-t-d-h5;
+    padding: 4rem 0 1rem 0;
+    color: $text-light-accent;
+  }
+  &__title {
+    @include m-t-d-h3;
+    padding: 0.5rem 0 1rem 0;
+    color: $text-light;
+  }
+}

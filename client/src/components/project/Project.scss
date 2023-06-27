@@ -1,0 +1,220 @@
+/** @format */
+
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/breakpoints" as *;
+@use "../../styles/resets" as *;
+
+.project-container {
+  background-color: $background-dark;
+}
+
+.project {
+  @include flex(column, center, center);
+  max-width: 1440px;
+  margin: 0 1rem;
+  padding: 0 1rem 4rem 1rem;
+  @include tablet {
+    margin: 0 auto;
+    padding: 3.5rem 4rem;
+    // padding: 2rem 3rem;
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  display: block;
+  position: relative;
+  @include flex(row, center, center);
+  // max-width: 1280px;
+  width: 100%;
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+  }
+  @include desktop-small {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+  }
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+  }
+
+  &__left {
+    @include flex(row, center, center);
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+  &__image {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    opacity: 12%;
+    @include tablet {
+      grid-column-start: 1;
+      grid-row-start: 1;
+      grid-column-end: 4;
+      grid-row-end: 3;
+    }
+    @include desktop {
+      grid-column-start: 1;
+      grid-row-start: 1;
+      grid-column-end: 6;
+      grid-row-end: 3;
+    }
+  }
+  &__right {
+    @include flex(column, space-evenly, flex-start);
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 0 0.5rem;
+    @include medium {
+      @include flex(column, space-evenly, flex-start);
+      width: 100%;
+      padding: 1rem 1rem;
+    }
+    @include tablet {
+      position: absolute;
+      grid-column-start: 2;
+      padding: 0 1rem 0 1rem;
+
+      // margin: 0 0 1rem 0;
+    }
+    @include desktop-small {
+      grid-column-start: 3;
+    }
+    @include desktop {
+      grid-column-start: 6;
+      grid-row-start: 1;
+      grid-column-end: 11;
+      grid-row-end: 3;
+      padding: 0 0 0 1.5rem;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    color: $text-light;
+    @include medium {
+      font-size: 26px;
+    }
+    @include tablet {
+      font-size: 30px;
+    }
+    @include desktop {
+      font-size: 25px;
+    }
+  }
+  &__name {
+    font-size: 16px;
+    color: $text-light-accent;
+    @include medium {
+      font-size: 20px;
+    }
+    @include tablet {
+      font-size: 26px;
+    }
+    @include desktop {
+      font-size: 1.25rem;
+    }
+  }
+  &__information {
+    font-size: 13px;
+    color: $text-light;
+    @include tablet {
+      font-size: 23px;
+    }
+  }
+  &__summary {
+    @include medium {
+      font-size: 16px;
+    }
+    @include tablet {
+      font-size: 20px;
+    }
+    @include desktop {
+      font-size: 1rem;
+    }
+  }
+  &__tech-stack {
+    @include flex(row, flex-start, center);
+    width: 100%;
+  }
+  &__tech {
+    font-size: 13px;
+    color: $text-light-accent;
+    &:nth-child(odd) {
+      padding: 0rem 1rem 0rem 0rem;
+    }
+    &:nth-child(even) {
+      padding: 0rem 1rem 0rem 0rem;
+    }
+    // &:nth-child(1) {
+    //   padding: 0rem 1rem 0rem 0rem;
+    // }
+    @include medium {
+      font-size: 16px;
+    }
+    @include tablet {
+      font-size: 23px;
+    }
+    @include desktop {
+      font-size: 1.25rem;
+    }
+  }
+  &__links {
+    @include flex(row, flex-start, center);
+  }
+  &__github {
+    padding: 0 0.5rem 0 0;
+    width: 100%;
+    &-image {
+      width: 100%;
+      @include medium {
+        width: 1.75rem;
+      }
+      @include tablet {
+        width: 3rem;
+      }
+      @include desktop-small {
+        width: 2.5rem;
+      }
+      @include desktop {
+        width: 2.5rem;
+      }
+    }
+  }
+  &__website {
+    padding: 0 0 0 0.5rem;
+    width: 100%;
+    &-image {
+      width: 100%;
+      @include medium {
+        width: 1.75rem;
+      }
+      @include tablet {
+        width: 3rem;
+      }
+      @include desktop-small {
+        width: 2.5rem;
+      }
+      @include desktop {
+        width: 2.25rem;
+      }
+    }
+  }
+}

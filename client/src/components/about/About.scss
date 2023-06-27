@@ -1,0 +1,139 @@
+/** @format */
+
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/breakpoints" as *;
+@use "../../styles/resets" as *;
+
+.about-container {
+  background-color: $background-light;
+}
+
+.about {
+  @include flex(column, center, flex-start);
+  max-width: 1440px;
+  padding: 0 1rem;
+  margin: 0 1rem;
+  @include tablet {
+    padding: 0 4rem 3.5rem 4rem;
+    margin: 0 auto;
+  }
+  @include desktop-small {
+    padding: 0 4rem 3.5rem 4rem;
+  }
+  @include desktop {
+    padding: 2rem 3.5rem 6rem 3.5rem;
+  }
+  &__name {
+    @include m-t-d-h5;
+    padding: 4rem 0 1rem 0;
+    color: $text-light-accent;
+  }
+  &__title {
+    @include m-t-d-h3;
+    padding: 0.5rem 0 1rem 0;
+    color: $text-dark;
+  }
+  &__information {
+    @include flex(column, center, center);
+    padding: 1rem 0 0 0;
+    width: 100%;
+    @include desktop-small {
+      @include flex(row, flex-start, center);
+      padding: 4rem 0 0 0;
+    }
+  }
+  &__picture {
+    @include desktop-small {
+      @include flex(row, center, center);
+      width: 100%;
+      padding: 0 2rem 0 0;
+    }
+  }
+  &__image {
+    width: 100%;
+    border-radius: 0%;
+    padding: 1rem 0;
+    @include tablet {
+      width: 80%;
+    }
+    @include desktop-small {
+      width: 100%;
+    }
+    @include desktop {
+      width: 95%;
+    }
+  }
+  &__details {
+    @include desktop-small {
+      padding: 0 0 0 2rem;
+      width: 100%;
+    }
+  }
+  &__text {
+    @include m-t-d-text-big;
+    color: $text-dark;
+    padding: 1rem 0rem 2rem 0rem;
+    @include tablet {
+      padding: 2rem 0 0 0;
+    }
+    @include desktop {
+      padding: 2rem 0 1rem 0;
+    }
+  }
+  &__tech {
+    @include m-t-d-text-big;
+    // font-size: 18px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0 1rem;
+    padding: 0 0 2rem 0;
+    margin: 0 0 2rem 0;
+    width: 100%;
+    color: $text-dark;
+    list-style: none;
+    text-decoration: none;
+    @include tablet {
+      padding: 1rem 0 0 0;
+    }
+    @include desktop {
+      padding: 1rem 0 0 0;
+    }
+  }
+  &__skill {
+    line-height: 2rem;
+    text-decoration: none;
+    list-style: none;
+    cursor: default;
+    &::before {
+      content: ">";
+      @include m-t-d-h4;
+      padding: 0 0.5rem 0 0;
+      left: 0px;
+      color: $text-light-accent;
+    }
+  }
+}
+
+.skills-container {
+  @include flex(column, flex-start, center);
+  width: 100%;
+}
+
+.skills {
+  @include m-t-d-h5;
+  @include flex(column, center, flex-start);
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0;
+  color: $text-light-accent;
+  @include tablet {
+    padding: 1rem 0 0 0;
+  }
+  @include desktop-small {
+    padding: 1rem 0 0 0;
+  }
+  @include desktop {
+    padding: 1rem 0 1rem 0;
+  }
+}
