@@ -18,20 +18,17 @@ export default function About() {
           </div>
           <div className="about__details">
             <p className="about__text">
-              I am a dedicated Software Developer with a strong background in
-              Business Analysis. I am driven by a passion for crafting
-              user-friendly interfaces that not only meet client objectives but
-              also generate tangible results.
+              Software Developer with a background in business transformation
+              with experience in building responsive web applications and
+              integrating APIs.
               <br />
               <br />
-              With meticulous attention to detail and a knack for
-              problem-solving, I ensure every aspect of my work contributes to a
-              seamless user experience.
+              Adept at collaborating across teams, gathering requirements, and
+              translating business needs into technical solutions.
               <br />
               <br />
-              By combining my technical skills with an analytical mindset, I am
-              committed to developing impactful digital experiences that drive
-              success.
+              Currently seeking developer roles to apply technical expertise in
+              creating modern, user-friendly interfaces.
               <br />
             </p>
             <div className="skills-container">
@@ -39,20 +36,14 @@ export default function About() {
                 Here are some of the technologies I have worked with
               </h5>
               <ul className="about__tech">
-                <li className="about__skill">HTML/HTML5</li>
-                <li className="about__skill">CSS/CSS3</li>
-                <li className="about__skill">SCSS</li>
+                <li className="about__skill">HTML5</li>
+                <li className="about__skill">CSS/SCSS</li>
                 <li className="about__skill">JavaScript</li>
-                <li className="about__skill">TypeScript</li>
-                <li className="about__skill">React.js</li>
-                <li className="about__skill">Angular</li>
-                <li className="about__skill">Node.js</li>
-                <li className="about__skill">Express.js</li>
-                <li className="about__skill">MySQL</li>
+                <li className="about__skill">React</li>
                 <li className="about__skill">PHP</li>
-                <li className="about__skill">Stripe</li>
-                <li className="about__skill">EmailJS</li>
-                <li className="about__skill">MapBox</li>
+                <li className="about__skill">Laravel</li>
+                <li className="about__skill">Node.js</li>
+                <li className="about__skill">MySQL</li>
               </ul>
             </div>
           </div>
