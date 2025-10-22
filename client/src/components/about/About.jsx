@@ -18,30 +18,24 @@ export default function About() {
           </div>
           <div className="about__details">
             <p className="about__text">
-              Software Developer with a background in business transformation
-              with experience in building responsive web applications and
-              integrating APIs.
+              I am a Full Stack Developer specialising in JavaScript, React,
+              Node.js & PHP.
               <br />
               <br />
-              Adept at collaborating across teams, gathering requirements, and
-              translating business needs into technical solutions.
+              My current interests include learning and building web
+              applications using JavaScript, React and Node.js.
               <br />
-              <br />
-              Currently seeking developer roles to apply technical expertise in
-              creating modern, user-friendly interfaces.
-              <br />
+              <br />I have 2 years of experience working at a startup, building
+              and maintaining an online live streaming platform.
             </p>
             <div className="skills-container">
               <h5 className="skills">
                 Here are some of the technologies I have worked with
               </h5>
               <ul className="about__tech">
-                <li className="about__skill">HTML5</li>
-                <li className="about__skill">CSS/SCSS</li>
                 <li className="about__skill">JavaScript</li>
                 <li className="about__skill">React</li>
                 <li className="about__skill">PHP</li>
-                <li className="about__skill">Laravel</li>
                 <li className="about__skill">Node.js</li>
                 <li className="about__skill">MySQL</li>
               </ul>
