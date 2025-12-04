@@ -5,7 +5,7 @@ import "./Navbar.scss";
 import logo from "../../assets/icons/logo.svg";
 import burgerMenu from "../../assets/icons/burgerMenu.svg";
 
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function Navbar() {
   const [sideBar, setSideBar] = useState(false);

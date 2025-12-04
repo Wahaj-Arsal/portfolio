@@ -1,7 +1,3 @@
-/** @format */
-
-import React from "react";
-
 import html from "../../assets/images/html5.svg";
 import javascript from "../../assets/images/js.svg";
 import scss from "../../assets/images/sass.svg";

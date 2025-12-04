@@ -2,8 +2,6 @@
 
 import "./HeroTitle.scss";
 
-import React from "react";
-
 import heroImg from "../../assets/images/hero_image.svg";
 
 export default function HeroTitle() {
