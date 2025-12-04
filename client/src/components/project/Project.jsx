@@ -2,8 +2,6 @@
 
 import "./Project.scss";
 
-import React from "react";
-
 import gitHub from "../../assets/icons/github_v2.svg";
 import externalLink from "../../assets/icons/externalLink.svg";
 

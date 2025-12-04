@@ -2,8 +2,6 @@
 
 import "./About.scss";
 
-import React from "react";
-
 import profilePicture from "../../assets/images/about_image.png";
 
 export default function About() {
@@ -35,8 +33,9 @@ export default function About() {
               <ul className="about__tech">
                 <li className="about__skill">JavaScript</li>
                 <li className="about__skill">React</li>
-                <li className="about__skill">PHP</li>
+                <li className="about__skill">Redux</li>
                 <li className="about__skill">Node.js</li>
+                <li className="about__skill">Express</li>
                 <li className="about__skill">MySQL</li>
               </ul>
             </div>
