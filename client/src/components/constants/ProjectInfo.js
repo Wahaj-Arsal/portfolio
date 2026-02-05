@@ -18,7 +18,7 @@ export const Projects = [
       "HappyBites is a place to ask AI for your next dessert idea or if you're feeling lazy to buy your desserts.",
     stack: ["JavaScript", "ChatGPT API"],
     github: "https://github.com/Wahaj-Arsal/happy_bites",
-    url: "https://happy-bites-5hv0.onrender.com/",
+    url: "technative-academy.github.io/happy_bites/",
     image: "happy_bites.png",
   },
   // {

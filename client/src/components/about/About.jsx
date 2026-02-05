@@ -17,7 +17,7 @@ export default function About() {
           <div className="about__details">
             <p className="about__text">
               I am a Full Stack Developer specialising in JavaScript, React,
-              Node.js & PHP.
+              Redux, Node.js.
               <br />
               <br />
               My current interests include learning and building web
